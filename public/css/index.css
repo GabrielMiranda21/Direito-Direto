@@ -16,11 +16,6 @@ header {
     background-color: #0C0C24;
 }
 
-header#logo {
-    width: 100px;
-    height: 100px;
-}
-
 header nav {
     display: flex;
     flex-direction: column;
@@ -48,4 +43,43 @@ header nav ul a, span {
 header nav ul a li {
     margin: 0 10px;
     list-style: none;
+}
+
+/* Boas Vindas */
+
+main {
+    width: 100%;
+    height: 800px;
+}
+
+main section.boasVindas {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+
+main section.boasVindas div.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+main section.boasVindas div.conteudo h1 {
+    margin: 25px 25px;
+    font-size: 64px;
+}
+
+main section.boasVindas div.conteudo p {
+    margin: 15px 25px;
+    font-size: 22px;    
+}
+
+main section.boasVindas div.conteudo h1, p {
+    color: #fff;
+}
+
+main section.boasVindas aside img {
+    width: 750px;
+    height: 600px;
 }
