@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #111130;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+    background-color: #0C0C24;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+header nav#registroLogin {
+    padding-left: 125px;
+}
+
+header nav#menu ul li {
+    font-size: 20px;
+    color: #78838E;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul a, span {
+    text-decoration: none;
+    color: #fff
+}
+
+header nav ul a li {
+    margin: 0 10px;
+    list-style: none;
+}
+
+
+/* FILTRO */
+
+main {
+    width: 100%;
+    height: 570px;
+}
+
+main section.filtro-advogado {
+    width: 340px;
+    height: 570px;
+    background-color: #0C0C24;
+    opacity: 0.8;
+}
+
+main section.filtro-advogado form {
+    padding: 20px 0;
+}
+
+main section.filtro-advogado form fieldset.filtro {
+    color: #fff;
+    border: none;
+}
+
+main section.filtro-advogado form fieldset.filtro legend{
+    text-align: center;
+    font-size: 32px;
+    margin: 20px 0;     
+}
+
+main section.filtro-advogado form fieldset.filtro div.localizacao {
+    display: block;
+    padding: 0 50px;
+}
+
+main section.filtro-advogado form fieldset.filtro div.raioDistancia{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0 50px;
+}
+
+main section.filtro-advogado form fieldset.filtro div.especialidade {
+    display: block;
+    padding: 0 50px;
+}
+
+main section.filtro-advogado form fieldset.filtro div.especialidade select{
+    width: 250px;
+}
+
+main section.filtro-advogado form fieldset.filtro div.honorario{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0 50px;
+}
+
+main section.filtro-advogado form fieldset.filtro div.consultaGratuita{
+    display: inline-block;
+    padding: 0 50px;
+}
+
+input[type="search"] {
+    width: 250px;
+    height: 20px;
+}
+
+input[type="checkbox"] {
+    margin: 0 10px;
+}
+
+label {
+    font-size: 20px;
+}
