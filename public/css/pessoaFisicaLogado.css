@@ -149,7 +149,7 @@ section.content div.perfilUsuario {
     width: 500px;
     height: 300px;
     box-shadow: 0 10px 10px 0 black;  
-    background-color: #006769;
+    background-color: #001c1d;
 }
 
 section.content div.perfilUsuario div.capa {
@@ -181,4 +181,11 @@ section.content div.perfilUsuario div.informacoes p {
     font-size: 18px;
     margin: 5px 0;
     color: #fff;
+}
+
+section.content div.perfilUsuario div.informacoes a {
+    padding-left: 220px;
+    color: #3483FA;
+    text-decoration: none;
+    font-size: 18px;
 }
