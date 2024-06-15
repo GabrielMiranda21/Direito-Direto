@@ -4,8 +4,6 @@ let input3 = document.getElementById("num3");
 let input4 = document.getElementById("num4");
 let input5 = document.getElementById("num5");
 
-let strong = createElement("strong");
-
 let arrayInput = [input1, input2, input3, input4, input5];
 
 arrayInput.forEach((input, index) => {
