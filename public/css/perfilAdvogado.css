@@ -6,60 +6,55 @@
 
 body {
     background-color: #111130;
+    width: 100%;
 }   
 
 section.perfilAdvogado {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: auto; /* Alterado para altura automática */
     background-color: #223344;
     box-shadow: 0 0 10px 0 black;
+    padding-bottom: 50px; /* Adicionado espaço para informações */
 }
 
 section.perfilAdvogado div.capaFundo {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 300px;
+    height: 40vh; /* Alterado para altura relativa */
     background-image: url("/public/img/capaPerfil1.jpeg");
     background-size: cover;
 }   
 
-section.perfilAdvogado div.fotoPerfil {
+section.perfilAdvogado di23v.fotoPerfil {
     position: absolute;
-    top: 210px;  
-    left: 100px;
-    width: 200px;
-    height: 200px;
+    top: 50%; /* Centralizado verticalmente */
+    left: 50px; /* Alterado para margem fixa */
+    transform: translateY(-50%); /* Centralizado verticalmente */
+    width: 20%; /* Alterado para largura relativa */
+    max-width: 200px; /* Limitado a 200px */
+    height: auto; /* Altura automática */
     background-image: url("/public/img/fotoPerfilAdvogado.jpg");
     background-size: cover;
-    border-radius: 100px;
+    border-radius: 50%; /* Corrigido para círculo */
 }
 
-
-/*position não ta sendo muito efetivo para responsividade, 
-melhor pensar em outra alternativa */
 
 section.perfilAdvogado div.informacoesAdvogado {
-    width: 100%;
+    width: 90%; /* Alterado para largura relativa */
+    margin: 0 auto; /* Centralizado horizontalmente */
 }
 
-
 section.perfilAdvogado div.informacoesAdvogado div.informacoesPessoais{
-    position: absolute;
-    top: 325px;
-    left: 325px;
+    margin-top: 20px; /* Adicionada margem superior */
 }
 
 section.perfilAdvogado div.informacoesAdvogado div.feedbackVisual{
-    position: absolute;
-    width: 100%;
-    top: 325px;
-    left: 1575px;
+    margin-top: 20px; /* Adicionada margem superior */
 }
 
-
 p {
-    font-size: 18px;
+    font-size: 1rem; /* Alterado para tamanho relativo */
     margin: 5px 0;
     color: #fff;
 }
@@ -67,5 +62,12 @@ p {
 a {
     color: #3483FA;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1rem; /* Alterado para tamanho relativo */
+}
+
+/* Media query para ajustar estilos em telas menores */
+@media (max-width: 768px) {
+    section.perfilAdvogado div.fotoPerfil {
+        width: 30%; /* Reduz a largura da foto em telas menores */
+    }
 }
