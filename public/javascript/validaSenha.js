@@ -15,21 +15,21 @@ senhaNova.addEventListener('keyup', () => {
     if (senha.length >= 8) {
         minimo.style.color = "green";
     } else {
-        minimo.style.color = "white";
+        minimo.style.color = "gray";
     }
 
     // verifica se o primeiro digito é maiuscula
     if (senha.length > 0 && senha[0] === senha[0].toUpperCase() && isNaN(senha[0])) {
         maiusculo.style.color = "green";
     } else {
-        maiusculo.style.color = "white";
+        maiusculo.style.color = "gray";
     }
 
     // verifica se possui caractere especial
     if (caracteresEspeciais.test(senha)) {
         caractere.style.color = "green";
     } else {
-        caractere.style.color = "white";
+        caractere.style.color = "gray";
     }
     
 })
