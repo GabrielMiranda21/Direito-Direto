@@ -5,7 +5,7 @@ footer {
     height: auto;
     background-color: #0C0C24;
     color: white;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 footer div.logo {
@@ -14,6 +14,7 @@ footer div.logo {
     align-items: center;
     width: 300px;
     height: 300px;
+    margin: 15px;
 }
 
 footer div.logo img{
@@ -24,7 +25,7 @@ footer div.logo img{
 footer div.contato {
     width: 250px;
     height: 150px;
-    margin: 0 50px;
+    margin: 15px 50px;
 }
 
 footer div.contato h2{
@@ -47,7 +48,7 @@ footer form {
 }
 
 footer div.feedback {
-    margin: 0 50px;
+    margin: 15px 50px;
 }
 
 footer div.feedback form fieldset{
@@ -100,6 +101,7 @@ textarea {
     padding: 5px;
     font-size: 15px;
     margin: 10px 0 10px 0;
+    resize: none;
 }
 
 div.feedback form fieldset div.mensagem  button[type="submit"] {
@@ -111,6 +113,16 @@ div.feedback form fieldset div.mensagem  button[type="submit"] {
     font-weight: bold;
     border-radius: 5px;
     border: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: none;
 }
 
 @media screen and (max-width: 860px) {
