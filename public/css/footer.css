@@ -75,6 +75,7 @@ div.cidade, div.telefone {
 
 footer form fieldset legend{
     font-size: 40px;
+    margin-bottom: 10px;
 }
 
 label {
@@ -132,7 +133,6 @@ input[type="number"] {
     
     footer div.logo,
     footer div.contato {
-        width: calc(50% - 20px); 
         margin: 20px 10px; 
     }
 
@@ -167,5 +167,11 @@ input[type="number"] {
         display: flex;
         margin: 10px 0 5px 0;
         justify-content: center;
+    }
+
+    footer form fieldset legend{
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 10px;
     }
 }

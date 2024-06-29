@@ -97,7 +97,7 @@ main section.nossoSite div.cards {
     width: 1100px;
     max-width: 100%;
     color: white;
-    padding: 0 30px;
+    padding: 0 30px 15px 0;
 }
 
 main section.nossoSite div.cards div.card1, div.card2, div.card3, div.card4{
