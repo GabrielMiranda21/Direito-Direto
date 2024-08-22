@@ -303,7 +303,6 @@ main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvi
     main section.nossoSite div.cards {  
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
-        align-items: center;
         width: 100%;
         max-width: 450px;
         padding: 0;
