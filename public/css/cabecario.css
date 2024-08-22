@@ -14,9 +14,19 @@ header {
     background-color: #0C0C24;
 }
 
-header nav {
+header div.menu-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+}
+
+header div.menu-container img {
+    display: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+header nav {
     margin: 10px 0;
 }
 
@@ -42,3 +52,18 @@ header nav ul a li {
     margin: 0 10px;
     list-style: none;
 }
+
+/* RESPONSIVIDADE */
+
+@media  screen and (min-width: 320px) and (max-width: 485px){
+    header div.menu-container div.menu #registroLogin, #menu {
+        display: none;
+    }
+
+    header div.menu-container img {
+        display: block;
+        margin-top: 7px;
+    }
+}
+    
+/* 
