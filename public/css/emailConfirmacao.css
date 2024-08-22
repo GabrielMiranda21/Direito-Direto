@@ -69,3 +69,21 @@ strong {
     color: #a91346;
     overflow-wrap: break-word;
 }
+
+/* RESPONSIVIDADE */
+
+@media screen and ((min-width: 320px) and (max-width: 370px)){
+    section form fieldset legend {
+        font-size: 30px;
+    }
+
+    section form fieldset div.valorEmail label {
+        font-size: 15px;
+    }
+
+    section form fieldset button#confirmar {
+        height: 40px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}

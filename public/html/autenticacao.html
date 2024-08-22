@@ -15,7 +15,7 @@
 
 
         <div class="menu-container">
-            <img src="/public/img/menu.png" alt="menu">
+            <img id="hamburger" src="/public/img/menu.png" alt="menu">
 
             <div class="menu">
                 <nav id="registroLogin">
@@ -33,10 +33,23 @@
                         <a href="http://"><li>Sobre</li></a>
                     </ul>
                 </nav>
+                <div class="container">
+                    
+                    <nav id="menu-mobile">
+                        <ul class="usuario">
+                            <a href="http://"><li>Registrar</li></a>
+                            <a href="http://"><li>Entrar</li></a>
+                        </ul>
+                    
+                        <ul class="navegar">
+                            <a href="http://"><li>Página Inicial</li></a>
+                            <a href="http://"><li>Busca</li></a>
+                            <a href="http://"><li>Sobre</li></a>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-    
-        
     </header>
 
     <main>
@@ -63,5 +76,7 @@
         </section>
     </main>
     <script src="../javascript/autenticacao.js"></script>
+    <script src="../javascript/menu.js"></script>
+
 </body>
 </html>

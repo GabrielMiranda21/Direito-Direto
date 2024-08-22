@@ -4,10 +4,6 @@ let input3 = document.getElementById("num3");
 let input4 = document.getElementById("num4");
 let input5 = document.getElementById("num5");
 
-let hamburger = document.getElementById9("hamburger");
-let menu1 = document.getElementById("registroLogin");
-let menu2 = document.getElementById("menu");
-
 let button = document.getElementById("confirmar");
 let strong = document.createElement("strong");
 
@@ -42,14 +38,3 @@ button.addEventListener('click', () => {
     }
 
 }) 
-
-
-hamburger.addEventListener('click', () => {
-    if(menu2.style.display == "block") {
-        menu1.style.display = "none";
-        menu2.style.display = "none";
-    } else {
-        menu1.style.display = "block";
-        menu2.style.display = "block";
-    }
-})

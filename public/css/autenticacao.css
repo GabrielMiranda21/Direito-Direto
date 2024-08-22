@@ -15,7 +15,7 @@ main {
 
 section {
     background-color: #0C0C24;
-    width: 650px;
+    width: 580px;
     height: auto;
     padding: 20px 30px;
     margin: 20px;
@@ -73,30 +73,58 @@ strong {
 /* RESPONSIVIDADE */
 
 
-@media screen and ((min-width: 465px) and (max-width: 630px)){
-    section {
-        padding: 20px 15px;
-
-    }
+@media screen and ((min-width: 550px) and (max-width: 630px)){
 
     input[type="text"]{
-        width: 60px;
+        width: 65px;
         height: 70px;
-        margin: 30px 15px;
+        margin: 30px 10px;
+        padding: 0 6%;
     }
     
 }
 
-@media screen and ((min-width: 320px) and (max-width: 465px)){
-    section {
-        padding: 20px 15px;
-
+@media screen and ((min-width: 465px) and (max-width: 550px)){
+    button {
+        height: 39px;
+        font-size: 24px;
     }
 
     input[type="text"]{
         width: 50px;
-        height: 60px;
+        height: 55px;
+        margin: 30px 10px;
+        padding: 0 5%;
+    }
+    
+}
+
+@media screen and ((min-width: 380px) and (max-width: 465px)){
+    button {
+        height: 37px;
+        font-size: 22px;
+    }
+
+    input[type="text"]{
+        width: 40px;
+        height: 45px;
         margin: 30px 5px;
+        padding: 0 5%;
+    }
+    
+}
+
+@media screen and ((min-width: 320px) and (max-width: 380px)){
+    button {
+        height: 35px;
+        font-size: 18px;
+    }
+
+    input[type="text"]{
+        width: 30px;
+        height: 35px;
+        margin: 30px 5px;
+        padding: 0 3%;
     }
     
 }
