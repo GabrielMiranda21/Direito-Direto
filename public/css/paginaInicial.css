@@ -74,7 +74,7 @@ main section.boasVindas div.busca span a{
 
 /* ------------------------------- SECTION NOSSO SITE ------------------------------- */
 
-/*
+
 main section.nossoSite {
     display: flex;
     flex-direction: column;
@@ -111,7 +111,7 @@ main section.nossoSite div.cards div.card1, div.card2, div.card3, div.card4{
     background-color: #111130;
     box-shadow: 10px 10px 5px rgb(0, 0, 0);
     border-radius: 20px;
-    margin: 30px 0 30px 0;
+    margin: 30px 0;
     padding: 0 0 10px 0;
 }
 
@@ -125,7 +125,7 @@ main section.nossoSite div.cards p {
     font-size: 20px;
     margin: 15px 25px;
 }
-*/
+
 
 /* ------------------------------- DUVIDAS FREQUENTES ------------------------------- */
 
@@ -180,8 +180,75 @@ main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvi
 
 /* ------------------------------- MEDIA QUERY ------------------------------- */
 
-@media screen and (min-width: 450px) and (max-width: 550px) {
+@media screen and (min-width: 805px) and (max-width: 1050px) {
+    main section.nossoSite div.cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 20px;
+        width: 1100px;
+        max-width: 100%;
+        color: white;
+        padding: 20px;
+    }
 
+}
+
+@media screen and (min-width: 550px) and (max-width: 805px) {
+
+    /* --------------- SECTION BOAS VINDAS --------------- */
+
+    main section.boasVindas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 805px;
+    }
+
+    main section.boasVindas div.sobreoSite{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0 0 0;
+        padding: 20px 25px 0 50px;
+        width: 100%;
+        height: 220px;
+    }
+
+    main section.boasVindas div.busca{
+        width: 100%;
+        height: 400px;
+        margin-top: 60px;
+    }
+
+    /* --------------- SECTION NOSSO SITE --------------- */
+
+    main section.nossoSite h2 {
+        font-size: 28px;
+        margin: 10px 0;
+        color: white;
+    }
+
+    main section.nossoSite div.cards {  
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        max-width: 805px;
+        padding: 0;
+    }
+
+    main section.nossoSite div.cards div.card1, div.card2, div.card3, div.card4{
+        max-width: 335px;
+        height: 235px;
+        margin: 10px 0;
+        padding: 10px 0 10px 0;
+    }
+
+}
+
+@media screen and (min-width: 450px) and (max-width: 550px) {
     /* --------------- SECTION BOAS VINDAS --------------- */
 
     main section.boasVindas{
@@ -226,6 +293,36 @@ main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvi
     }
 
     /* --------------- SECTION NOSSO SITE --------------- */
+
+    main section.nossoSite h2 {
+        font-size: 28px;
+        margin: 10px 0;
+        color: white;
+    }
+
+    main section.nossoSite div.cards {  
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        max-width: 450px;
+        padding: 0;
+    }
+
+    main section.nossoSite div.cards div.card1, div.card2, div.card3, div.card4{
+        max-width: 255px;
+        height: 250px;
+        margin: 20px 10px
+    }
+
+    span.title{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    main section.nossoSite div.cards p {
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 450px) {
@@ -269,6 +366,38 @@ main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvi
     }
     
     main section.boasVindas div.busca span a{
+        font-size: 16px;
+    }
+
+    /* --------------- SECTION NOSSO SITE --------------- */
+
+    main section.nossoSite h2 {
+        font-size: 28px;
+        margin: 10px 0;
+        color: white;
+    }
+
+    main section.nossoSite div.cards {  
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        max-width: 450px;
+        padding: 0;
+    }
+
+    main section.nossoSite div.cards div.card1, div.card2, div.card3, div.card4{
+        max-width: 255px;
+        height: 250px;
+        margin: 20px 10px
+    }
+
+    span.title{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    main section.nossoSite div.cards p {
         font-size: 16px;
     }
 }
