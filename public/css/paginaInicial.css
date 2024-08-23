@@ -129,7 +129,6 @@ main section.nossoSite div.cards p {
 
 /* ------------------------------- DUVIDAS FREQUENTES ------------------------------- */
 
-/*
 main section.perguntasFrequentes {
     display: flex;
     flex-direction: column;
@@ -175,7 +174,6 @@ main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvi
     display: flex;
     align-items: center;
 }
-*/
 
 
 /* ------------------------------- MEDIA QUERY ------------------------------- */
@@ -194,9 +192,44 @@ main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvi
         height: 265px;
     }
 
+    /* --------------- SECTION PERGUNTAS FREQUENTES --------------- */
+
 }
 
-@media screen and (min-width: 550px) and (max-width: 805px) {
+@media screen and (min-width: 750px) and (max-width: 805px) {
+
+    main section.boasVindas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 805px;
+    }
+
+    main section.boasVindas div.sobreoSite{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0 0 0;
+        padding: 20px 25px 0 50px;
+        width: 100%;
+        height: 220px;
+    }
+
+    main section.boasVindas div.busca{
+        width: 100%;
+        height: 400px;
+        margin-top: 60px;
+    } 
+
+    main section.nossoSite div.cards div.card1, div.card2, div.card3, div.card4 {
+        max-width: 275px;
+        height: 280px;
+    }
+
+    /* --------------- SECTION PERGUNTAS FREQUENTES --------------- */
+}
+
+@media screen and (min-width: 550px) and (max-width: 750px) {
 
     /* --------------- SECTION BOAS VINDAS --------------- */
 
@@ -246,6 +279,40 @@ main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvi
         height: 310px;
         margin: 10px 0;
         padding: 10px 0 10px 0;
+    }
+
+    main section.nossoSite div.cards div.card1 span.title,
+    main section.nossoSite div.cards div.card2 span.title,
+    main section.nossoSite div.cards div.card3 span.title,
+    main section.nossoSite div.cards div.card4 span.title {
+        font-weight: bold;
+        font-size: 22px;
+        padding: 10px 0;
+    }
+
+    main section.nossoSite div.cards div.card1 p,
+    main section.nossoSite div.cards div.card2 p,
+    main section.nossoSite div.cards div.card3 p,
+    main section.nossoSite div.cards div.card4 p {
+        font-size: 18px;
+        margin: 15px 25px;
+    }
+
+    /* --------------- SECTION PERGUNTAS FREQUENTES --------------- */
+
+    main section.perguntasFrequentes h3{
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    main section.perguntasFrequentes ion-icon {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvida4 p{
+        font-size: 20px;
+        padding: 10px 0;
     }
 
 }
@@ -324,6 +391,23 @@ main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvi
     main section.nossoSite div.cards p {
         font-size: 16px;
     }
+
+    /* --------------- SECTION PERGUNTAS FREQUENTES --------------- */
+
+    main section.perguntasFrequentes h3{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    main section.perguntasFrequentes ion-icon {
+        font-size: 18px;
+        color: #fff;
+    }
+
+    main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvida4 p{
+        font-size: 18px;
+        padding: 10px 0;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 450px) {
@@ -400,5 +484,22 @@ main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvi
     
     main section.nossoSite div.cards p {
         font-size: 16px;
+    }
+
+    /* --------------- SECTION PERGUNTAS FREQUENTES --------------- */
+
+    main section.perguntasFrequentes h3{
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    main section.perguntasFrequentes ion-icon {
+        font-size: 16px;
+        color: #fff;
+    }
+
+    main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvida4 p{
+        font-size: 16px;
+        padding: 10px 0;
     }
 }
