@@ -44,9 +44,9 @@
             <h1>Resumo Profissional</h1>
 
             <div class="box">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil non dolorem consequuntur exercitationem 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil non dolorem consequuntur exercitationem 
                 facere esse in sapiente voluptas ullam consequatur? Quis adipisci, tempora eum velit unde repellendus ad 
-                omnis qui.
+                omnis qui</p>
             </div>
         </div>
 

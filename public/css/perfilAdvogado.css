@@ -64,3 +64,53 @@ section.perfilAdvogado div.informacoesAdvogado div.feedbackVisual p{
 
 /*********************** RESUMO PROFISSIONAL ***********************/
 
+section.resumoProfissional {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 35px;
+}
+
+section.resumoProfissional div.biografia {
+    width: 40%;
+}
+
+section.resumoProfissional div.biografia h1{
+    color: #ffffff;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+section.resumoProfissional div.biografia div.box {
+    width: 500px;
+    height: 300px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+section.resumoProfissional div.biografia div.box p {
+    color: #fff;
+}
+
+section.resumoProfissional div.servicosOferecidos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.resumoProfissional div.servicosOferecidos h2 {
+    color: #fff;
+}
+
+section.resumoProfissional div.servicosOferecidos p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
