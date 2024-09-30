@@ -12,62 +12,55 @@ body {
 section.perfilAdvogado {
     position: relative;
     width: 100%;
-    height: auto; /* Alterado para altura automática */
-    background-color: #223344;
-    box-shadow: 0 0 10px 0 black;
-    padding-bottom: 50px; /* Adicionado espaço para informações */
+    height: 400px; 
+    background-color: #0C0C24;
 }
 
 section.perfilAdvogado div.capaFundo {
-    position: relative;
+    display: block;
     width: 100%;
-    height: 40vh; /* Alterado para altura relativa */
-    background-image: url("/public/img/capaPerfil1.jpeg");
-    background-size: cover;
-}   
-
-section.perfilAdvogado di23v.fotoPerfil {
-    position: absolute;
-    top: 50%; /* Centralizado verticalmente */
-    left: 50px; /* Alterado para margem fixa */
-    transform: translateY(-50%); /* Centralizado verticalmente */
-    width: 20%; /* Alterado para largura relativa */
-    max-width: 200px; /* Limitado a 200px */
-    height: auto; /* Altura automática */
-    background-image: url("/public/img/fotoPerfilAdvogado.jpg");
-    background-size: cover;
-    border-radius: 50%; /* Corrigido para círculo */
 }
 
+section.perfilAdvogado div.capaFundo img {
+    width: 100%;
+    height: 275px;
+    background-size: cover;
+}
+
+section.perfilAdvogado div.fotoPerfil {
+    position: absolute;
+    top: 200px; 
+    left: 50px; 
+    width: 125px;
+    height: 125px;
+    border-radius: 50%; 
+    overflow: hidden;
+}
+
+section.perfilAdvogado div.fotoPerfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    background-size: cover;
+}
 
 section.perfilAdvogado div.informacoesAdvogado {
-    width: 90%; /* Alterado para largura relativa */
-    margin: 0 auto; /* Centralizado horizontalmente */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 15px 0 190px;
 }
 
-section.perfilAdvogado div.informacoesAdvogado div.informacoesPessoais{
-    margin-top: 20px; /* Adicionada margem superior */
+section.perfilAdvogado div.informacoesAdvogado div.informacoesPessoais,
+section.perfilAdvogado div.informacoesAdvogado div.feedbackVisual {
+    color: white;
 }
 
-section.perfilAdvogado div.informacoesAdvogado div.feedbackVisual{
-    margin-top: 20px; /* Adicionada margem superior */
+section.perfilAdvogado div.informacoesAdvogado div.informacoesPessoais p,
+section.perfilAdvogado div.informacoesAdvogado div.feedbackVisual p{
+    margin-bottom: 5px;
 }
 
-p {
-    font-size: 1rem; /* Alterado para tamanho relativo */
-    margin: 5px 0;
-    color: #fff;
-}
+/*********************** RESUMO PROFISSIONAL ***********************/
 
-a {
-    color: #3483FA;
-    text-decoration: none;
-    font-size: 1rem; /* Alterado para tamanho relativo */
-}
-
-/* Media query para ajustar estilos em telas menores */
-@media (max-width: 768px) {
-    section.perfilAdvogado div.fotoPerfil {
-        width: 30%; /* Reduz a largura da foto em telas menores */
-    }
-}

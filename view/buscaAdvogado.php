@@ -10,53 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">    
 
     <!--CSS-->
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/pessoaFisicaLogado.css">
+    <link rel="stylesheet" href="../public/css/header.css">
+    <link rel="stylesheet" href="../public/css/buscaAdvogado.css">
 
     <title>Busca</title>
 </head>
 <body>
-    <header>
-        <img id="logo" src="../img/logo.png" alt="Logo">
-
-
-        <div class="menu-container">
-            <img id="hamburger" src="../img/menu.png" alt="menu">
-
-            <div class="menu">
-                <nav id="registroLogin">
-                    <ul >
-                        <a href="http://"><li>Registrar</li></a>
-                        <span> | </span>
-                        <a href="http://"><li>Entrar</li></a>
-                    </ul>
-                </nav>
-            
-                <nav id="menu">
-                    <ul >
-                        <a href="http://"><li>Página Inicial</li></a>
-                        <a href="http://"><li>Busca</li></a>
-                        <a href="http://"><li>Sobre</li></a>
-                    </ul>
-                </nav>
-                <div class="container">
-                    
-                    <nav id="menu-mobile">
-                        <ul class="usuario">
-                            <a href="http://"><li>Registrar</li></a>
-                            <a href="http://"><li>Entrar</li></a>
-                        </ul>
-                    
-                        <ul class="navegar">
-                            <a href="http://"><li>Página Inicial</li></a>
-                            <a href="http://"><li>Busca</li></a>
-                            <a href="http://"><li>Sobre</li></a>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+    <?php include('../view/partials/header.php')?>
+        
     <main>
 
         <section class="filtro-advogado">    
@@ -84,7 +45,7 @@
                         <select name="especialidade" id="especialidade">
                             <option value="vazio"></option>
                             <option value="direitoCivil">Direito Civil</option>
-                            <option value="direitoPenal">Direito Penal</option>                           </option>
+                            <option value="direitoPenal">Direito Penal</option>
                             <option value="direitoProcessualCivil">Direito Processual Civil</option>
                             <option value="direitoProcessualPenal">Direito Processual Penal</option>
                             <option value="direitoAdministrativo">Direito Administrativo</option>
@@ -222,11 +183,86 @@
                         <a href="#">Ver Perfil</a>
                     </div>
                 </div>
+
+                <div class="perfilUsuario">
+                    <div class="capa"></div>
+                    <div class="foto"></div>
+                    <div class="informacoes">
+                        <p>nomeUsuario</p>
+                        <p>formacaoAcademica</p>
+                        <p>numeroOAB</p>
+                        <a href="#">Ver Perfil</a>
+                    </div>
+                </div>
+
+                <!------------------>
+
+                <div class="perfilUsuario">
+                    <div class="capa"></div>
+                    <div class="foto"></div>
+                    <div class="informacoes">
+                        <p>nomeUsuario</p>
+                        <p>formacaoAcademica</p>
+                        <p>numeroOAB</p>
+                        <a href="#">Ver Perfil</a>
+                    </div>
+                </div>
+                <div class="perfilUsuario">
+                    <div class="capa"></div>
+                    <div class="foto"></div>
+                    <div class="informacoes">
+                        <p>nomeUsuario</p>
+                        <p>formacaoAcademica</p>
+                        <p>numeroOAB</p>
+                        <a href="#">Ver Perfil</a>
+                    </div>
+                </div>
+                <div class="perfilUsuario">
+                    <div class="capa"></div>
+                    <div class="foto"></div>
+                    <div class="informacoes">
+                        <p>nomeUsuario</p>
+                        <p>formacaoAcademica</p>
+                        <p>numeroOAB</p>
+                        <a href="#">Ver Perfil</a>
+                    </div>
+                </div>
+                <div class="perfilUsuario">
+                    <div class="capa"></div>
+                    <div class="foto"></div>
+                    <div class="informacoes">
+                        <p>nomeUsuario</p>
+                        <p>formacaoAcademica</p>
+                        <p>numeroOAB</p>
+                        <a href="#">Ver Perfil</a>
+                    </div>
+                </div>
+                <div class="perfilUsuario">
+                    <div class="capa"></div>
+                    <div class="foto"></div>
+                    <div class="informacoes">
+                        <p>nomeUsuario</p>
+                        <p>formacaoAcademica</p>
+                        <p>numeroOAB</p>
+                        <a href="#">Ver Perfil</a>
+                    </div>
+                </div>
+                <div class="perfilUsuario">
+                    <div class="capa"></div>
+                    <div class="foto"></div>
+                    <div class="informacoes">
+                        <p>nomeUsuario</p>
+                        <p>formacaoAcademica</p>
+                        <p>numeroOAB</p>
+                        <a href="#">Ver Perfil</a>
+                    </div>
+                </div>
+
         </section>
     </main>
 
-    <script src="../javascript/menu.js"></script>
-    <script src="../javascript/filtro.js"></script>
+    <script src="../public/javascript/menu.js"></script>
+    <script src="../public/javascript/filtro.js"></script>
 
 </body>
 </html>

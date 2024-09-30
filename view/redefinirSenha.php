@@ -4,34 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/cabecario.css">
-    <link rel="stylesheet" href="../css/redefinirSenha.css">
+    <link rel="stylesheet" href="../public/css/header.css">
+    <link rel="stylesheet" href="../public/css/redefinirSenha.css">
 
     <title>Direito Direto - Redefinir Senha</title>
 </head>
 <body>
-    <header>
-        <img id="logo" src="/public/img/logo.png" alt="Logo">
-    
-        <div class="menu">
-            <nav id="registroLogin">
-                <ul >
-                    <a href="http://"><li>Registrar</li></a>
-                    <span> | </span>
-                    <a href="http://"><li>Entrar</li></a>
-                </ul>
-            </nav>
-            
-            <nav id="menu">
-                <ul >
-                    <a href="http://"><li>Página Inicial</li></a>
-                    <a href="http://"><li>Busca</li></a>
-                    <a href="http://"><li>Sobre</li></a>
-                </ul>
-            </nav>
-    
-        </div>
-    </header>
+    <?php include('../view/partials/header.php')?>
 
     <main>
         <section>
@@ -60,6 +39,6 @@
                 </form>
         </section>
     </main>
-    <script src="../javascript/validaSenha.js"></script>
+    <script src="../public/javascript/validaSenha.js"></script>
 </body>
 </html>

@@ -4,54 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/paginaInicial.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../public/css/header.css">
+    <link rel="stylesheet" href="../public/css/paginaInicial.css">
+    <link rel="stylesheet" href="../public/css/footer.css">
 
     <title>Direito Direto - Página Inicial</title>
 </head>
 <body>
-    <header>
-        <img id="logo" src="../img/logo.png" alt="Logo">
-
-
-        <div class="menu-container">
-            <img id="hamburger" src="../img/menu.png" alt="menu">
-
-            <div class="menu">
-                <nav id="registroLogin">
-                    <ul >
-                        <a href="http://"><li>Registrar</li></a>
-                        <span> | </span>
-                        <a href="http://"><li>Entrar</li></a>
-                    </ul>
-                </nav>
-            
-                <nav id="menu">
-                    <ul >
-                        <a href="http://"><li>Página Inicial</li></a>
-                        <a href="http://"><li>Busca</li></a>
-                        <a href="http://"><li>Sobre</li></a>
-                    </ul>
-                </nav>
-                <div class="container">
-                    
-                    <nav id="menu-mobile">
-                        <ul class="usuario">
-                            <a href="http://"><li>Registrar</li></a>
-                            <a href="http://"><li>Entrar</li></a>
-                        </ul>
-                    
-                        <ul class="navegar">
-                            <a href="http://"><li>Página Inicial</li></a>
-                            <a href="http://"><li>Busca</li></a>
-                            <a href="http://"><li>Sobre</li></a>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+    <?php include('../view/partials/header.php')?>
 
     <!------------------------------------------------------------------------------>
 
@@ -69,7 +29,7 @@
             <div class="busca">
                 <span>
                     <p>Deseja realizar uma busca?</p>
-                    <a href="#">Clique Aqui</a>
+                    <a href="../view/buscaAdvogado.php">Clique Aqui</a>
                 </span>
             </div>
         </section>
@@ -102,7 +62,7 @@
 
     <!------------------------------------------------------------------------------>
 
-    <section class="perguntasFrequentes">
+        <section class="perguntasFrequentes">
         <h3>Dúvidas Frequentes</h3>
 
         <div class="duvidasFrequentes">
@@ -139,69 +99,10 @@
                 <ion-icon name="chevron-down-outline"></ion-icon>
             </div>
         </div>
-    </section>
+        </section>
 
     <!------------------------------------------------------------------------------>
-
-    <footer>
-        <div class="logo">
-            <img src="../img/logo.png" alt="Direito Direto">
-        </div>
-    
-        <div class="contato">
-            <h2>Contato</h2>
-            <div class="informacoesContato">
-                <strong>Email: direitoDireto@email.com</strong>
-                <strong>Redes Sociais: </strong>
-                <div class="redesSociais">
-                    <img src="../img/instagram.png" alt="instagram">
-                    <img src="../img/facebook.png" alt="facebook">
-                    <img src="../img/linkedin.png" alt="linkedin">
-                </div>
-            </div>
-        </div>
-    
-        <div class="feedback">
-            <form action="#" method="post">
-                <fieldset>
-                    <legend><strong>Feedback</strong></legend>
-    
-                        <div class="nomeeCidade">
-                            <div class="nome">
-                                <label for="nome">Nome: </label>
-                                <input type="text" name="nome" id="nome">
-                            </div>
-        
-                            <div class="cidade">
-                                <label for="cidade">Cidade: </label>
-                                <input type="text" name="cidade" id="cidade">
-                            </div>
-                        </div>
-    
-                        <div class="emaileTelefone">
-                            <div class="email">
-                                <label for="email">Email: </label>
-                                <input type="email" name="email" id="email">
-                            </div>
-        
-                            <div class="telefone">
-                                <label for="telefone">Telefone: </label>
-                                <input type="number" name="telefone" id="telefone">
-                            </div>
-                        </div>
-    
-    
-                    <div class="mensagem">
-                        <label for="mensagem">Mensagem: </label>
-                        <textarea name="mensagem" id="mensagem"></textarea>
-                        
-                        <button type="submit">Enviar</button>
-                    </div>
-    
-                   </fieldset>
-            </form>
-        </div>
-    </footer>
+    <?php include('../view/partials/footer.php');?>
 
     </main>
 
@@ -210,6 +111,6 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <!--Lógica-->
-    <script src="../javascript/menu.js"></script>
+    <script src="../public/javascript/menu.js"></script>
 </body>
 </html>
