@@ -68,7 +68,7 @@ section.resumoProfissional {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-top: 35px;
+    margin: 35px 0;
 }
 
 section.resumoProfissional div.biografia {
@@ -101,6 +101,7 @@ section.resumoProfissional div.servicosOferecidos {
 
 section.resumoProfissional div.servicosOferecidos h2 {
     color: #fff;
+    margin-bottom: 10px;
 }
 
 section.resumoProfissional div.servicosOferecidos p {
@@ -109,8 +110,72 @@ section.resumoProfissional div.servicosOferecidos p {
     align-items: center;
     font-size: 15px;
     color: #fff;
-    width: 100px;
+    width: 175px;
     height: 50px;
     border: 1px solid #fff;
-    border-radius: 10px;
+    border-radius: 35px;
+    margin-bottom: 10px;
+}
+
+/*********************** AVALIAÇÕES ***********************/
+
+section.avaliacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: #0C0C24;
+}
+
+section.avaliacoes h3{
+    font-size: 26px;
+    margin: 30px 0; 
+    color: #fff;
+}
+
+section.avaliacoes div.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+section.avaliacoes div.feedback div.usuario {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0 150px
+}
+
+section.avaliacoes div.feedback div.usuario p{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    font-size: 22px;
+    color: #fff;
+}
+
+section.avaliacoes div.feedback div.usuario div.perfilUsuario {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%; 
+    overflow: hidden;
+}
+
+section.avaliacoes div.feedback div.usuario div.perfilUsuario img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    background-size: cover;
+}
+
+section.avaliacoes div.feedback div.comentario {
+    width: 100%;
+    max-width: 800px;
+    height: 250px;
+    border: 1px solid #fff;
+    border-radius: 15px;
 }

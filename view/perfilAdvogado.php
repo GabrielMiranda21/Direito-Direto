@@ -60,7 +60,20 @@
     </section>
 
 
-    <section class="avaliacoes"></section>
+    <section class="avaliacoes">
+        <h3>Avaliações</h3>
+
+        <div class="feedback">
+            <div class="usuario">
+                <div class="perfilUsuario">
+                    <img src="../public/img/perfil1.png" alt="perfil">
+                </div>
+                <p id="nomePerfil">nomePerfil</p>
+                <p id="estrelas">*****</p>
+            </div>
+            <div class="comentario"></div>
+        </div>
+    </section>
 
     <script src="../public/javascript/menu.js"></script>
 
