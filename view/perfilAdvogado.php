@@ -63,16 +63,23 @@
     <section class="avaliacoes">
         <h3>Avaliações</h3>
 
-        <div class="feedback">
-            <div class="usuario">
-                <div class="perfilUsuario">
-                    <img src="../public/img/perfil1.png" alt="perfil">
-                </div>
-                <p id="nomePerfil">nomePerfil</p>
-                <p id="estrelas">*****</p>
+        <div class="perfilComentario">
+            <div class="perfilUsuario">
+                <img src="../public/img/perfil1.png" alt="perfil">
             </div>
-            <div class="comentario"></div>
+
+            <div class="feedback">
+                <div class="usuario">
+                        
+                    <p id="nomePerfil">Nome Completo</p>
+                    <p id="estrelas">* * * * *</p>
+                </div>
+                
+                <div class="comentario"></div>
+            </div>
         </div>
+
+        
     </section>
 
     <script src="../public/javascript/menu.js"></script>
