@@ -1,0 +1,903 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #111130;
+    height: calc(100% - 75px);
+}
+
+/* --------------- FILTRO --------------- */
+
+main {
+    display: flex;
+    height: 100%;
+}
+
+main section.filtro-advogado {
+    width: 340px;
+    background-color: #0C0C24;
+    opacity: 0.8;
+}
+
+main section.filtro-advogado form {
+    padding: 20px 0;
+}
+
+main section.filtro-advogado form fieldset.filtro {
+    color: #fff;
+    border: none;
+}
+
+main section.filtro-advogado form fieldset.filtro legend{
+    text-align: center;
+    font-size: 32px;
+    margin: 20px 0;     
+}
+
+main section.filtro-advogado form fieldset.filtro div.localizacao {
+    display: block;
+    padding: 0 50px;
+}
+
+main section.filtro-advogado form fieldset.filtro div.raioDistancia{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0 50px;
+}
+
+main section.filtro-advogado form fieldset.filtro div.especialidade {
+    display: block;
+    padding: 0 50px;
+}
+
+main section.filtro-advogado form fieldset.filtro div.especialidade select{
+    width: 250px;
+}
+
+main section.filtro-advogado form fieldset.filtro div.honorario{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0 50px;
+}
+
+main section.filtro-advogado form fieldset.filtro div.consultaGratuita{
+    display: inline-block;
+    padding: 0 50px;
+}
+
+main section.filtro-advogado form fieldset.filtro div.enviar button{
+    display: block;
+    margin: 10px 50px;
+}
+
+input, select, button {
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px; 
+}
+
+input[type="search"] {
+    width: 250px;
+    height: 20px;
+}
+
+input[type="checkbox"] {
+    margin: 0 10px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    max-width: 250px;
+    height: 20px;
+    background-color: #3483FA;
+}
+
+label {
+    font-size: 20px;
+}
+
+.filtro-tablet {
+    display: none;
+}
+
+/* --------------- PERFIS ADVOGADO --------------- */
+
+section.content {
+    display: grid;
+    width: 100%;
+    margin: 30px 30px;
+}
+
+section.content div.perfilUsuario {
+    position: relative;
+    width: 450px;
+    height: 300px;
+    box-shadow: 0 10px 10px 0 black;  
+    background-color: #001c1d;
+}
+
+section.content div.perfilUsuario div.capa {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-image: url("../img/capaPerfil1.jpeg");
+    background-size: cover;
+    box-shadow: 10px black;
+}
+
+section.content div.perfilUsuario div.foto {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-image: url("../img/perfil1.png");
+    background-size: cover;
+}
+
+section.content div.perfilUsuario div.informacoes {
+    display: block;
+    position: absolute;
+    top: 165px;
+    left: 200px;
+}
+
+section.content div.perfilUsuario div.informacoes p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #fff;
+}
+
+section.content div.perfilUsuario div.informacoes a {
+    padding-left: 170px;
+    color: #3483FA;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* --------------- RESPONSIVIDADE --------------- */
+
+@media screen and (min-width: 800px) and (max-width: 1020px) {
+
+    body {
+        height: 100%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    
+    main section.filtro-advogado {
+        width: 100%;
+        background-color: #0C0C24;
+        opacity: 0.8;
+    }
+
+    section.content {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    section.content div.perfilUsuario {
+        width: 375px;
+        height: 265px;
+        margin: 15px;
+    }
+
+    section.content div.perfilUsuario div.foto {
+        width: 105px;
+        height: 105px;
+    }
+
+    section.content div.perfilUsuario div.informacoes {
+        top: 165px;
+        left: 150px;
+    }
+
+    section.content div.perfilUsuario div.informacoes p {
+        font-size: 16px;
+    }
+
+    section.content div.perfilUsuario div.informacoes a {
+        padding-left: 0;
+    }
+
+    /* --------------- FILTRO --------------- */
+
+    main section.filtro-tablet form {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #0C0C24;
+        opacity: 0.8;
+        padding: 30px 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro {
+        display: flex;
+        flex-direction: column;
+        border: none;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao1 {
+        display:flex;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 {
+        display:flex;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro legend {
+        text-align: center;
+        color: #fff;
+        font-size: 28px;
+        margin: 10px 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div {
+        margin: 0 5px;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao1 div.localizacao {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao1 div.raioDistancia {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao1 div.especialidade {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.honorario {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 5px; 
+        padding: 0; 
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.honorario select {
+        margin: 0 10px 0 0;
+        width: 149px;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.consultaGratuita {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.consultaGratuita input[type="checkbox"]{
+        margin: 2px 0 0 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.enviar {
+        display: flex;
+        align-items: center;
+        margin: 15px 0 0px 30px;
+        padding: 0;
+      }
+
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.enviar button {
+        width: 125px;
+        height: 20px;
+        background-color: #3483FA;
+      }
+
+      input, select, button {
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 10px; 
+    }
+    
+    input[type="search"] {
+        width: 150px;
+        height: 17px;
+    }
+    
+    input[type="checkbox"] {
+        margin: 0 10px;
+    }
+
+    label {
+        display: flex;
+        font-size: 20px;
+        color: #fff;
+      }
+}
+
+@media screen and (min-width: 650px) and (max-width: 800px) {
+
+    body {
+        height: 100%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    
+    main section.filtro-advogado {
+        width: 100%;
+        background-color: #0C0C24;
+        opacity: 0.8;
+    }
+
+    section.content {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    section.content div.perfilUsuario {
+        width: 615px;
+        height: 265px;
+        margin: 15px;
+    }
+
+    section.content div.perfilUsuario div.foto {
+        width: 105px;
+        height: 105px;
+    }
+
+    section.content div.perfilUsuario div.informacoes {
+        top: 165px;
+        left: 150px;
+    }
+
+    section.content div.perfilUsuario div.informacoes p {
+        font-size: 16px;
+    }
+
+    section.content div.perfilUsuario div.informacoes a {
+        padding-left: 0;
+    }
+
+    /* --------------- FILTRO --------------- */
+
+    main section.filtro-tablet form {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #0C0C24;
+        opacity: 0.8;
+        padding: 30px 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro {
+        display: flex;
+        flex-direction: column;
+        border: none;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao1 {
+        display:flex;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 {
+        display:flex;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro legend {
+        text-align: center;
+        color: #fff;
+        font-size: 28px;
+        margin: 10px 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div {
+        margin: 0 5px;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao1 div.localizacao {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao1 div.raioDistancia {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao1 div.especialidade {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.honorario {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 5px; 
+        padding: 0; 
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.honorario select {
+        margin: 0 10px 0 0;
+        width: 149px;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.consultaGratuita {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.consultaGratuita input[type="checkbox"]{
+        margin: 2px 0 0 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.enviar {
+        display: flex;
+        align-items: center;
+        margin: 15px 0 0px 30px;
+        padding: 0;
+      }
+
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.enviar button {
+        width: 125px;
+        height: 20px;
+        background-color: #3483FA;
+      }
+
+      input, select, button {
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 10px; 
+    }
+    
+    input[type="search"] {
+        width: 150px;
+        height: 17px;
+    }
+    
+    input[type="checkbox"] {
+        margin: 0 10px;
+    }
+
+    label {
+        display: flex;
+        font-size: 20px;
+        color: #fff;
+      }
+}
+
+@media screen and (min-width: 525px) and (max-width: 650px) {
+
+    body {
+        height: 100%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    
+    main section.filtro-advogado {
+        width: 100%;
+        background-color: #0C0C24;
+        opacity: 0.8;
+    }
+
+    section.content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    section.content div.perfilUsuario {
+        width: 495px;
+        height: 265px;
+        margin: 15px 0; 
+    }
+
+    section.content div.perfilUsuario div.foto {
+        width: 105px;
+        height: 105px;
+    }
+
+    section.content div.perfilUsuario div.informacoes {
+        top: 165px;
+        left: 150px;
+    }
+
+    section.content div.perfilUsuario div.informacoes p {
+        font-size: 16px;
+    }
+
+    section.content div.perfilUsuario div.informacoes a {
+        padding-left: 0;
+    }
+
+    /* --------------- FILTRO --------------- */
+
+    main section.filtro-tablet form {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #0C0C24;
+        opacity: 0.8;
+        padding: 30px 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro {
+        display: flex;
+        flex-direction: column;
+        border: none;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao1 {
+        display:flex;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 {
+        display:flex;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro legend {
+        text-align: center;
+        color: #fff;
+        font-size: 26px;
+        margin: 10px 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div {
+        margin: 0 5px;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao1 div.localizacao {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao1 div.raioDistancia {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao1 div.especialidade {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.honorario {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 5px; 
+        padding: 0; 
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.honorario select {
+        margin: 0 10px 0 0;
+        width: 149px;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.consultaGratuita {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.consultaGratuita input[type="checkbox"]{
+        margin: 2px 0 0 0;
+      }
+      
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.enviar {
+        display: flex;
+        align-items: center;
+        margin: 15px 0 0px 30px;
+        padding: 0;
+      }
+
+      main section.filtro-tablet form fieldset.filtro div.divisao2 div.enviar button {
+        width: 125px;
+        height: 20px;
+        background-color: #3483FA;
+      }
+
+      input, select, button {
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 10px; 
+    }
+    
+    input[type="search"] {
+        width: 150px;
+        height: 17px;
+    }
+    
+    input[type="checkbox"] {
+        margin: 0 10px;
+    }
+
+    label {
+        display: flex;
+        font-size: 20px;
+        color: #fff;
+      }
+}
+
+@media screen and (min-width: 475px) and (max-width: 525px) {
+
+    body {
+        height: 100%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 525px;
+        height: 100%;
+    }
+    
+    main section.filtro-advogado {
+        width: 100%;
+        background-color: #0C0C24;
+        opacity: 0.8;
+    }
+
+    main section.content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    main section.content div.perfilUsuario {
+        width: 475px;
+        height: 265px;
+        margin: 15px 0;
+    }
+
+    main section.content div.perfilUsuario div.foto {
+        width: 105px;
+        height: 105px;
+    }
+
+    main section.content div.perfilUsuario div.informacoes {
+        top: 165px;
+        left: 150px;
+    }
+
+    main section.content div.perfilUsuario div.informacoes p {
+        font-size: 16px;
+    }
+
+    main section.content div.perfilUsuario div.informacoes a {
+        padding-left: 0;
+    }
+
+    /* --------------- FILTRO --------------- */
+
+    main section.filtro-tablet form {
+        width: 100%;
+        background-color: #0C0C24;
+        opacity: 0.8;
+        padding: 15px 0;
+    }
+
+    main section.filtro-tablet form fieldset.filtro {
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+
+    main section.filtro-tablet form fieldset.filtro legend {
+        text-align: center;
+        font-size: 28px;
+        color: #fff;
+    }
+
+    main section.filtro-tablet form fieldset.filtro div.localizacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    main section.filtro-tablet form fieldset.filtro div.raioDistancia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    main section.filtro-tablet form fieldset.filtro div.especialidade {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    main section.filtro-tablet form fieldset.filtro div.honorario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0; 
+        padding: 0; 
+    }
+
+    main section.filtro-tablet form fieldset.filtro div.consultaGratuita {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    main section.filtro-tablet form fieldset.filtro div.enviar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    label {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        color: #fff;
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 475px) {
+
+    body {
+        height: 100%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 525px;
+        height: 100%;
+    }
+    
+    main section.filtro-advogado {
+        width: 100%;
+        background-color: #0C0C24;
+        opacity: 0.8;
+    }
+
+    main section.content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    main section.content div.perfilUsuario {
+        width: 290px;
+        height: 265px;
+        margin: 15px 0
+    }
+
+    main section.content div.perfilUsuario div.foto {
+        width: 105px;
+        height: 105px;
+    }
+
+    main section.content div.perfilUsuario div.informacoes {
+        top: 165px;
+        left: 150px;
+    }
+
+    main section.content div.perfilUsuario div.informacoes p {
+        font-size: 16px;
+    }
+
+    main section.content div.perfilUsuario div.informacoes a {
+        padding-left: 0;
+    }
+
+    /* --------------- FILTRO --------------- */
+
+    main section.filtro-advogado form fieldset.filtro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section.filtro-advogado form fieldset.filtro legend {
+        text-align: center;
+        font-size: 22px;
+        margin: 10px 0;
+    }
+
+    main section.filtro-advogado form fieldset.filtro div.localizacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    main section.filtro-advogado form fieldset.filtro div.raioDistancia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    main section.filtro-advogado form fieldset.filtro div.especialidade {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    main section.filtro-advogado form fieldset.filtro div.honorario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0; 
+        padding: 0; 
+    }
+
+    main section.filtro-advogado form fieldset.filtro div.consultaGratuita {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    main section.filtro-advogado form fieldset.filtro div.enviar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    label {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+}

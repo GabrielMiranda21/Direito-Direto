@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+hmtl, body {
+    background-color: #111130;
+    width: 100%;
+}  
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+main section.perfilAdvogado {
+    position: relative;
+    width: 100%;
+    height: 400px; 
+    background-color: #0C0C24;
+}
+
+main section.perfilAdvogado div.capaFundo {
+    display: block;
+    width: 100%;
+}
+
+main section.perfilAdvogado div.capaFundo img {
+    width: 100%;
+    height: 275px;
+    background-size: cover;
+}
+
+main section.perfilAdvogado div.fotoPerfil {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%; 
+    overflow: hidden;
+}
+
+main section.perfilAdvogado div.fotoPerfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    background-size: cover;
+}
+
+main section.perfilAdvogado div.informacoesAdvogado {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 15px 0 190px;
+}
+
+main section.perfilAdvogado div.informacoesAdvogado div.informacoesPessoais,
+main section.perfilAdvogado div.informacoesAdvogado div.feedbackVisual {
+    color: white;
+}
+
+main section.perfilAdvogado div.informacoesAdvogado div.informacoesPessoais p,
+main section.perfilAdvogado div.informacoesAdvogado div.feedbackVisual p{
+    margin-bottom: 5px;
+}
