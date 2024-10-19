@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="../public/css/header.css">
-    <link rel="stylesheet" href="../public/css/paginaInicial.css">
-    <link rel="stylesheet" href="../public/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/paginaInicial.css">
+    <link rel="stylesheet" href="/css/footer.css">
 
-    <title><%- include('/partials/header.php') %></title>
+    <title><%- title %></title>
 </head>
 <body>
-    <%- include('/partials/header.php') %>
+    <header><%- include("./partials/header") %></header>
 
     <!------------------------------------------------------------------------------>
     
@@ -24,12 +24,12 @@
                 <p>Conheça agora a plataforma <strong>Direito Direto.</strong></p>
                 <p>Aqui você pode encontrar o profissional ideal para te auxiliar em suas necessidades jurídicas.</p>
                 <p>Nossa missão é fornecer um serviço de busca eficiente e fácil de usar, conectando clientes a advogados qualificados e experientes.</p>
-                <p>Se <a href="">cadastre</a> em nosso site!</p>
+                <p>Se <a href="/registro">cadastre</a> em nosso site!</p>
             </div>
             <div class="busca">
                 <span>
                     <p>Deseja realizar uma busca?</p>
-                    <a href="../view/buscaAdvogado.php">Clique Aqui</a>
+                    <a href="/buscaAdvogado">Clique aqui</a>
                 </span>
             </div>
         </section>
@@ -102,7 +102,7 @@
         </section>
 
     <!------------------------------------------------------------------------------>
-    <%- include('/partials/footer.php') %>
+    <footer> <%- include('./partials/footer') %> </footer> 
 
     </main>
 
@@ -111,6 +111,6 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <!--Lógica-->
-    <script src="../public/javascript/menu.js"></script>
+    <script src="./scripts/menu.js"></script>
 </body>
 </html>

@@ -1,3 +1,6 @@
+/*const express = require("express");
+const router = express.Router();*/
+
 const senhaNova = document.getElementById("senhaNova");
 const repetirSenha = document.getElementById("repetirSenha");
 
@@ -36,7 +39,7 @@ senhaNova.addEventListener('keyup', () => {
 
 button.addEventListener('click', () => {
     if(senhaNova.value === repetirSenha.value){
-        window.location.href = 'senhaAlterada.html';
+        window.location.href = '/carregamento';
         console.log("senha valida")
     } else {
         let errorMessage = document.createElement("strong");

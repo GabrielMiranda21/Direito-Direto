@@ -10,13 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">    
 
     <!--CSS-->
-    <link rel="stylesheet" href="../public/css/header.css">
-    <link rel="stylesheet" href="../public/css/buscaAdvogado.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/buscaAdvogado.css">
 
-    <title>Busca</title>
+    <title><%- title %></title>
 </head>
 <body>
-    <?php include('../view/partials/header.php')?>
+    <header><%- include('./partials/header') %></header>
         
     <main>
 
@@ -113,7 +113,7 @@
                             <select name="especialidade" id="especialidade">
                                 <option value="vazio"></option>
                                 <option value="direitoCivil">Direito Civil</option>
-                                <option value="direitoPenal">Direito Penal</option>                           </option>
+                                <option value="direitoPenal">Direito Penal</option>                          
                                 <option value="direitoProcessualCivil">Direito Processual Civil</option>
                                 <option value="direitoProcessualPenal">Direito Processual Penal</option>
                                 <option value="direitoAdministrativo">Direito Administrativo</option>
@@ -261,8 +261,8 @@
         </section>
     </main>
 
-    <script src="../public/javascript/menu.js"></script>
-    <script src="../public/javascript/filtro.js"></script>
+    <script src="/scripts/menu.js"></script>
+    <script src="/scripts/filtro.js"></script>
 
 </body>
 </html>

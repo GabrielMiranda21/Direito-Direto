@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../public/css/header.css">
-    <link rel="stylesheet" href="../public/css/login.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/login.css">
 
     <title>Direito Direto - Login</title>
 </head>
     <body>
-        <?php include('../view/partials/header.php')?>
+        <header><%- include("./partials/header") %></header>
 
         <main>
             <section class="login-container">
@@ -39,14 +39,14 @@
                     </fieldset>
                     
                     <div class="opcoes">
-                        <a href="../view/registro.php">Não tem uma conta?</a>
-                        <a href="../view/emailConfirmacao.php">Esqueceu sua senha?</a>
+                        <a href="/registro">Não tem uma conta?</a>
+                        <a href="/emailConfirmacao">Esqueceu sua senha?</a>
                     </div>
                     
                 </form>
             </section>
         </main>
 
-        <script src="../public/javascript/menu.js"></script>
+        <script src="/scripts/menu.js"></script>
     </body>  
 </html>

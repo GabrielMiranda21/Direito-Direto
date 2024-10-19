@@ -568,6 +568,7 @@ section.content div.perfilUsuario div.informacoes a {
         background-color: #0C0C24;
         opacity: 0.8;
         padding: 30px 0;
+        margin-bottom: 25px;
       }
       
       main section.filtro-tablet form fieldset.filtro {

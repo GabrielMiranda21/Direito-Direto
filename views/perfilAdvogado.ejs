@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/perfilAdvogado.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <title><%- title %> </title>
+</head>
+<body>
+    <header><%- include("./partials/header") %></header>
+
+    <main>
+        <section class="perfilAdvogado">
+            <div class="capaFundo">
+                <img src="/img/capaPerfil1.jpeg" alt="capaPerfil">
+            </div>
+            <div class="conteiner-fotoPerfil">
+                <div class="fotoPerfil">
+                    <img src="/img/fotoPerfilAdvogado.jpg" alt="capaPerfil">
+                </div>
+                
+                <div class="informacoesPerfil">
+                    <div class="nomeFormacao">
+                        <h1>Yiamin Nogueira da Silva</h1>
+                        <h2>Formação Academica</h2>
+                        <p>numeroOAB</p>
+                        <p>modeloTrabalhoAdvogado</p>
+                    </div>
+                    <div class="feedbackVisual">
+                        <div class="redesSociais">
+                            <p><strong>Redes Sociais:</strong></p>
+                            <div class="tiposRedeSocial">   
+                                <img src="/img/instagram.png" alt="instagram">
+                                <img src="/img/facebook.png" alt="facebook">
+                                <img src="/img/linkedin.png" alt="linkedin">
+                            </div>
+                        </div>
+                        <div class="casosResolvidos">
+                            <p><strong>Casos:</strong></p>
+                            <div class="numeroCasos">
+                                <p>numeroCasos</p>
+                            </div>
+                        </div>
+                        <div class="avaliacoes">
+                            <Strong>Média:</Strong>
+                            <div class="nota">
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+        <section class="resumoProfissional">
+            <div class="biografia">
+                <h1>Resumo Profissional</h1>
+                <div class="box">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil non dolorem consequuntur exercitationem 
+                    facere esse in sapiente voluptas ullam consequatur? Quis adipisci, tempora eum velit unde repellendus ad 
+                    omnis qui</p>
+                </div>
+            </div>
+            <div class="servicosOferecidos">
+                <h2>Serviços Oferecidos</h2>
+                <div class="servico">
+                    <p>servicoUm</p>
+                    <p>servicoDois</p>
+                    <p>servicoTres</p>
+                </div>
+            </div>
+        </section>
+        <section class="avaliacoes">
+            <h3>Avaliações</h3>
+            <div class="perfilComentario">
+                <div class="perfilUsuario">
+                    <img src="/img/perfil1.png" alt="perfil">
+                </div>
+                <div class="feedback">
+                    <div class="usuario">
+                            
+                        <p id="nomePerfil">Nome Completo</p>
+                        <div class="nota">
+                            <div class="estrela"></div>
+                            <div class="estrela"></div>
+                            <div class="estrela"></div>
+                            <div class="estrela"></div>
+                            <div class="estrela"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="comentario"></div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    
+
+    <footer><%- include("./partials/footer") %></footer>
+
+    <script src="/scripts/menu.js"></script>
+
+</body>
+</html>

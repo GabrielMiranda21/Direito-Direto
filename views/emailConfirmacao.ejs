@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../public/css/header.css">
-    <link rel="stylesheet" href="../public/css/emailConfirmacao.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/emailConfirmacao.css">
 
     <title>Direito Direto - Verificação (Etapa 1)</title>
 </head>
 <body>
-    <?php include('../view/partials/header.php')?>
+    <header><%- include("./partials/header") %></header>
 
     <main>
         <section>
-            <form action="../view/autenticacao.php">
+            <form action="/autenticacao">
                 <fieldset>
                     <legend>Digite seu email</legend>
 
@@ -28,6 +28,6 @@
             </form>
         </section>
     </main>
-    <script src="../public/javascript/menu.js"></script>
+    <script src="/scripts/menu.js"></script>
 </body>
 </html>

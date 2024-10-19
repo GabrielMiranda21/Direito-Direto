@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="../public/css/header.css">
-    <link rel="stylesheet" href="../public/css/autenticacao.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/autenticacao.css">
 
     <title>Direito Direto - Autenticação</title>
 </head>
 <body>
-    <?php include('../view/partials/header.php')?>
+    <header><%- include("./partials/header") %></header>
 
     <main>
         <section class="autenticacao">
@@ -18,7 +18,7 @@
 
             <p>Confirme o código enviado no email</p>
 
-            <form action="../view/redefinirSenha.php">
+            <form action="/redefinirSenha">
                 <fieldset>
 
                     <div class="autenticacaoCodigo">
@@ -35,8 +35,8 @@
             </form>
         </section>
     </main>
-    <script src="../public/javascript/autenticacao.js"></script>
-    <script src="../public/javascript/menu.js"></script>
+    <script src="/scripts/autenticacao.js"></script>
+    <script src="/scripts/menu.js"></script>
 
 </body>
 </html>

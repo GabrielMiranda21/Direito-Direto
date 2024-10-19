@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../public/css/header.css">
-    <link rel="stylesheet" href="../public/css/redefinirSenha.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/redefinirSenha.css">
 
-    <title>Direito Direto - Redefinir Senha</title>
+    <title><%- title %></title>
 </head>
 <body>
-    <?php include('../view/partials/header.php')?>
-
+    <header><%- include("./partials/header") %></header>
+    
     <main>
         <section>
                 <form action="#" method="post">
@@ -39,6 +39,6 @@
                 </form>
         </section>
     </main>
-    <script src="../public/javascript/validaSenha.js"></script>
+    <script src="/scripts/validaSenha.js"></script>
 </body>
 </html>
