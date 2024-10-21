@@ -175,6 +175,101 @@ main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvi
     align-items: center;
 }
 
+/* ------------------------------- MODAL ------------------------------- */
+div.modal {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 80px;
+}
+
+div.modal div.modal-container {
+    display: flex;
+    justify-content: center;
+}
+
+div#myModal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 50px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 1px solid #000;
+    background-color: #06081d;
+    color: #fff;
+  }
+  
+  div#myModal div.modal-content {
+    width: 525px;
+    height: 500px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #06061f;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  div#myModal div.modal-content h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  div#myModal div.modal-content div strong {
+    font-size: 20px;
+  }
+
+  div#myModal div.modal-content ul strong {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  div#myModal div.modal-content p {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  div#myModal div.modal-content ul {
+    list-style: none;
+  }
+
+  div#myModal div.modal-content ul li {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  div#myModal form {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px 0;
+  }
+  
+  div#myModal form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background-color: #008000;
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+  }
+  div#myModal form div.termo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div#myModal form div.termo input {
+    margin-right: 5px;
+  }
 
 /* ------------------------------- MEDIA QUERY ------------------------------- */
 
@@ -271,12 +366,13 @@ main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvi
         align-items: center;
         width: 100%;
         max-width: 805px;
+        margin-bottom: 15px;
         padding: 0;
     }
 
     main section.nossoSite div.cards div.card1, div.card2, div.card3, div.card4{
         max-width: 240px;
-        height: 310px;
+        height: 255px;
         margin: 10px 0;
         padding: 10px 0 10px 0;
     }
@@ -374,6 +470,7 @@ main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvi
         justify-items: center;
         width: 100%;
         max-width: 450px;
+        margin-bottom: 15px;
         padding: 0;
     }
 
@@ -468,6 +565,7 @@ main section.perguntasFrequentes div.duvida1, div.duvida2, div.duvida3, div.duvi
         align-items: center;
         width: 100%;
         max-width: 450px;
+        margin-bottom: 15px;
         padding: 0;
     }
 

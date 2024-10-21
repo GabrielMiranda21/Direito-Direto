@@ -22,7 +22,6 @@ router.get("/emailConfirmacao", (req, res) => {
     res.render("emailConfirmacao", { title: "Direito Direto - Email para confirmação"})
 });
 
-
 router.get("/autenticacao", (req, res) => {
     res.render("autenticacao", { title: "Direito Direto - Autenticação"})
 });
@@ -34,5 +33,9 @@ router.get("/redefinirSenha", (req, res) => {
 router.get("/carregamento", (req, res) => {
     res.render("carregamento", { title: "Direito Direto - Carregamento"})
 });
+
+router.get("/perfilAdvogado", (req, res) => {
+    res.render("perfilAdvogado", { title: "Direito Direto - nomeUsuario"})
+})
 
 module.exports = router;
